@@ -61,7 +61,7 @@ export default function Footer() {
       </div>
       <div className="border-t border-card-border px-4 py-4 text-center text-xs text-muted">
         <p>
-          © {new Date().getFullYear()} WebcamSexSites.com ·{" "}
+          © 2026 WebcamSexSites.com ·{" "}
           <Link href="/privacy" className="hover:text-foreground">
             Privacy
           </Link>{" "}
