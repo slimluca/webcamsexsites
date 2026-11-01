@@ -16,18 +16,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/affiliate-disclosure",
   ];
 
-  const now = new Date();
+  const lastModified = new Date("2026-11-01");
 
   const staticEntries: MetadataRoute.Sitemap = staticPaths.map((path) => ({
     url: `${siteUrl}${path}`,
-    lastModified: now,
+    lastModified,
     changeFrequency: path === "" ? "daily" : "weekly",
     priority: path === "" || path === "/best-webcam-sites" ? 1 : 0.8,
   }));
 
   const categoryEntries: MetadataRoute.Sitemap = categories.map((c) => ({
     url: `${siteUrl}/cams/${c.slug}`,
-    lastModified: now,
+    lastModified,
     changeFrequency: "weekly",
     priority: 0.7,
   }));
